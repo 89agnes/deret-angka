@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int a, b, deret;
+cout << " Masukan Jumlah Deret : ";
+cin >> deret;
+for (a=1; a<=deret; a++)
+{
+for (b=0; b<=deret - a; b++)
+{
+cout << a;
+if (a == deret -b)
+cout << "+";
+else cout << "-";
+}
+cout << endl;
+}
+
+return 0;
+}
