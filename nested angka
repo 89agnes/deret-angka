@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int n, x, y, i, j;
+cout << "Masukkan jumlah baris: ";
+cin >> n;
+cout<< "Nama : "Agnes" <<endl;
+cout<< "NIM  : " <<endl;
+cout<< "Kelas : IT101"<<endl;
+cout<< "\n";
+cout<<"Deret Pertama adalah :";
+cout<<endl;
+for (i = 1; i <= n; i++)
+{
+for (j = 1; j <= i; j++)
+{
+cout << j<<" ";
+}
+cout << "\n";
+}
+for (i = n; i >= 1; i--)
+{
+for (j = 1; j <= i; j++)
+{
+cout << j<<" ";
+}
+cout << "\n";
+}
+cout<<"Deret kedua adalah :";
+cout<<endl;
+for (int x = n; x >= 0; x--)
+{
+for (int y = 1; y <= x; y++)
+cout << (y * 2)-1 <<" ";
+cout << "\n";
+}
+for (int x = 1; x <= n; x++)
+{
+for (int y = 1; y <= x; y++)
+cout << (y * 2)-1 <<" ";
+cout<<"\n";
+
+}
+return 0;
+}
